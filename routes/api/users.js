@@ -2,6 +2,8 @@ const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcryptjs");
 const gravatar = require("gravatar");
+const jwt = require("jsonwebtoken");
+const keys = require("../../config/keys");
 
 // Load User Model
 const User = require("../../models/User");
@@ -60,7 +62,25 @@ router.post("/login", (req, res) => {
     //Check password
     bcrypt.compare(password, user.password).then(isMatch => {
       if (isMatch) {
-        res.json({ msg: "Success" });
+        //res.json({ msg: "Success" });
+        //The payload is a set of user attributes to be included in the token.  you may pick whatevery you want
+        const payload = {
+          id: user.id,
+          name: user.name,
+          avatar: user.avatar
+        };
+        //sign token
+        jwt.sign(
+          payload,
+          keys.secretOrKey,
+          { expiresIn: 3600 },
+          (err, token) => {
+            res.json({
+              success: true,
+              token: "Bearer " + token
+            });
+          }
+        );
       } else {
         return res.status(400).json({ password: "Password incorrect" });
       }
