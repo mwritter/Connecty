@@ -6,6 +6,10 @@ const jwt = require("jsonwebtoken");
 const keys = require("../../config/keys");
 const passport = require("passport");
 
+// Load input validation
+const validateRegisterInput = require("../../validation/register");
+const validateLoginInput = require("../../validation/login");
+
 // Load User Model
 const User = require("../../models/User");
 
@@ -13,6 +17,12 @@ const User = require("../../models/User");
 // @desc    Register user
 // @access  Public
 router.post("/register", (req, res) => {
+  const { errors, isValid } = validateRegisterInput(req.body);
+
+  if (!isValid) {
+    return res.status(400).json(error);
+  }
+
   User.findOne({ email: req.body.email }) // asynchronous, therefore must be handled using a promise
     .then(user => {
       if (user) {
@@ -51,6 +61,11 @@ router.post("/register", (req, res) => {
 // @desc    login user and return a jwt token
 // @access  Public
 router.post("/login", (req, res) => {
+  const { errors, isValid } = validateLoginInput(req.body);
+
+  if (!isValid) {
+    return res.status(400).json(errors);
+  }
   const email = req.body.email;
   const password = req.body.password;
 
