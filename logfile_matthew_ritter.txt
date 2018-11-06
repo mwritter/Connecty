@@ -1,3 +1,45 @@
+commit cf27fc7ed13b16bd947e412f8a5936c5e8c456dc
+Author: Matthew Ritter <mritter2283@gmail.com>
+Date:   Mon Nov 5 21:19:54 2018 -0500
+
+    Added delete profile and user to profile api
+
+commit 4a7b91a97f55f82ae7fea3cebdba470e9dbaa394
+Author: Matthew Ritter <mritter2283@gmail.com>
+Date:   Mon Nov 5 21:15:41 2018 -0500
+
+    Added delete to edu and exp in the profile api
+
+commit cb27ffe34f3f10182344ca1c212bd92dae389679
+Author: Matthew Ritter <mritter2283@gmail.com>
+Date:   Mon Nov 5 21:07:50 2018 -0500
+
+    Added post exp and post edu to profile api
+
+commit fc98a3b404772f4ce51e07d25ee311c647b0c740
+Author: Matthew Ritter <mritter2283@gmail.com>
+Date:   Mon Nov 5 20:43:06 2018 -0500
+
+    removed not needed code
+
+commit ae77d1640833155760d29e630dbfe029ed0fcd41
+Author: Matthew Ritter <mritter2283@gmail.com>
+Date:   Mon Nov 5 20:01:34 2018 -0500
+
+    Added get with user id and get all to profiles api
+
+commit e57060e8b5b2ed077009048e03eb697208d1a2c0
+Author: Matthew Ritter <mritter2283@gmail.com>
+Date:   Mon Nov 5 19:38:39 2018 -0500
+
+    added a profiles validator and updated profiles api
+
+commit af70129977c1d5bcd734efa4a32679b18c56e6af
+Author: Matthew Ritter <mritter2283@gmail.com>
+Date:   Mon Nov 5 19:22:24 2018 -0500
+
+    Created Profiles model and updated profiles api
+
 commit a82aec0a90db40ae9a43760eb6f6a668b69a9665
 Author: Matthew Ritter <mritter2283@gmail.com>
 Date:   Sat Oct 27 18:55:36 2018 -0400
