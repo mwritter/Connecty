@@ -1,0 +1,53 @@
+commit a82aec0a90db40ae9a43760eb6f6a668b69a9665
+Author: Matthew Ritter <mritter2283@gmail.com>
+Date:   Sat Oct 27 18:55:36 2018 -0400
+
+    finish 3.6
+
+commit 2db2267639182089c4a1e57107649ffeb1f590db
+Author: Matthew Ritter <mritter2283@gmail.com>
+Date:   Sat Oct 27 18:29:33 2018 -0400
+
+    Added server side validation for login and register
+
+commit 43507c09527c6788a29da3013642f9041962208a
+Author: Matthew Ritter <mritter2283@gmail.com>
+Date:   Sat Oct 27 18:21:43 2018 -0400
+
+    added get current with jwt token
+
+commit 2e0ee108550cbd35f25226d626258c953063c158
+Author: Matthew Ritter <mritter2283@gmail.com>
+Date:   Sat Oct 27 17:53:36 2018 -0400
+
+    Added login jwt sign
+
+commit 09f16c458b45d514de41a7d5210f11ebc3895627
+Author: Matthew Ritter <mritter2283@gmail.com>
+Date:   Sat Oct 27 17:34:18 2018 -0400
+
+    created api/users/login
+
+commit 45a84d7dbac8f1ffb71b20f62df13fe5beee1f83
+Author: Matthew Ritter <mritter2283@gmail.com>
+Date:   Sat Oct 27 17:27:04 2018 -0400
+
+    finished 3.2
+
+commit eeb1811f4fe0782732c036b9f7e7a36d1290ab2f
+Author: Matthew Ritter <mritter2283@gmail.com>
+Date:   Sat Oct 27 16:18:23 2018 -0400
+
+    Added routes/api/ users, posts, and profiles and updated server.js to use these routes
+
+commit 46a17d1b85e2b13068367185172c2e05f8212f9e
+Author: Matthew Ritter <mritter2283@gmail.com>
+Date:   Sat Oct 27 16:04:23 2018 -0400
+
+    fixed untracked files
+
+commit 2cd73746602cc631146f42d4b768031d5569e2db
+Author: Matthew Ritter <mritter2283@gmail.com>
+Date:   Sat Oct 27 15:52:41 2018 -0400
+
+    created a new Node.js app
