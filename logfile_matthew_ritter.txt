@@ -1,3 +1,33 @@
+commit 984aa5d64d9e4cf32568cc87c6946f697a1d07cb
+Author: Matthew Ritter <mritter2283@gmail.com>
+Date:   Thu Nov 8 07:49:00 2018 -0500
+
+    Added a way to like and dislike posts, also added way to comment on posts and to delete comments
+
+commit 8c1cbe23037bade42dbee657b57170235a9fde5d
+Author: Matthew Ritter <mritter2283@gmail.com>
+Date:   Thu Nov 8 07:23:23 2018 -0500
+
+    Added delete post to api, only owner can delete their own posts
+
+commit 432b155b06e99a4c1fcbfae57b3c333e14d21504
+Author: Matthew Ritter <mritter2283@gmail.com>
+Date:   Thu Nov 8 07:15:51 2018 -0500
+
+    Added get all posts and get single post to api
+
+commit 6a236fdf4320e7381a49af2622594b8850903e24
+Author: Matthew Ritter <mritter2283@gmail.com>
+Date:   Thu Nov 8 07:12:12 2018 -0500
+
+    Added post model, created validation and route for adding a post
+
+commit 2492612569a4a9f563505ace43e1744e393274b8
+Author: Matthew Ritter <mritter2283@gmail.com>
+Date:   Mon Nov 5 21:21:41 2018 -0500
+
+    Added logfile
+
 commit cf27fc7ed13b16bd947e412f8a5936c5e8c456dc
 Author: Matthew Ritter <mritter2283@gmail.com>
 Date:   Mon Nov 5 21:19:54 2018 -0500
