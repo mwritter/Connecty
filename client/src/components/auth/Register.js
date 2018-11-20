@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import classnames from "classnames";
 export default class Register extends Component {
   constructor(props) {
     super(props);
@@ -28,15 +29,14 @@ export default class Register extends Component {
       password2: this.state.password2
     };
 
-    console.log(newUser);
-
     axios
       .post("api/users/register", newUser)
       .then(res => console.log(res.data))
-      .catch(err => console.log(err.response.data));
+      .catch(err => this.setState({ error: err.response.data }));
   }
 
   render() {
+    const { error } = this.state;
     return (
       <div className="container">
         <div className="register">
@@ -47,29 +47,39 @@ export default class Register extends Component {
                 <p className="lead text-center">Create your Connecty account</p>
                 <form
                   action="create-profile.html"
-                  onValidate
+                  noValidate
                   onSubmit={this.onFormSubmit}
                 >
                   <div className="form-group">
                     <input
                       type="text"
-                      className="form-control form-control-lg"
+                      className={classnames("form-control form-control-lg", {
+                        "is-invalid": error.name
+                      })}
                       placeholder="Name"
                       name="name"
                       required
                       value={this.state.name}
                       onChange={this.onInputChange}
                     />
+                    {error.name && (
+                      <div className="invalid-feedback">{error.name}</div>
+                    )}
                   </div>
                   <div className="form-group">
                     <input
                       type="email"
-                      className="form-control form-control-lg"
+                      className={classnames("form-control form-control-lg", {
+                        "is-invalid": error.email
+                      })}
                       placeholder="Email Address"
                       name="email"
                       value={this.state.email}
                       onChange={this.onInputChange}
                     />
+                    {error.email && (
+                      <div className="invalid-feedback">{error.email}</div>
+                    )}
                     <small className="form-text text-muted">
                       This site uses Gravatar so if you want a profile image,
                       use a Gravatar email
@@ -78,22 +88,32 @@ export default class Register extends Component {
                   <div className="form-group">
                     <input
                       type="password"
-                      className="form-control form-control-lg"
+                      className={classnames("form-control form-control-lg", {
+                        "is-invalid": error.password
+                      })}
                       placeholder="Password"
                       name="password"
                       value={this.state.password}
                       onChange={this.onInputChange}
                     />
+                    {error.password && (
+                      <div className="invalid-feedback">{error.password}</div>
+                    )}
                   </div>
                   <div className="form-group">
                     <input
                       type="password"
-                      className="form-control form-control-lg"
+                      className={classnames("form-control form-control-lg", {
+                        "is-invalid": error.password2
+                      })}
                       placeholder="Confirm Password"
                       name="password2"
                       value={this.state.password2}
                       onChange={this.onInputChange}
                     />
+                    {error.password2 && (
+                      <div className="invalid-feedback">{error.password2}</div>
+                    )}
                   </div>
                   <input
                     type="submit"
