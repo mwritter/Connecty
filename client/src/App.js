@@ -14,6 +14,7 @@ class App extends Component {
           <Navbar />
           <Switch>
             <Route path="/register" component={Register} />
+            <Route path="/landing" component={Landing} />
             <Route exact path="/" component={Landing} />
           </Switch>
           <Footer />
