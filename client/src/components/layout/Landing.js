@@ -18,9 +18,9 @@ export default class Landing extends Component {
                 <Link to="/register" className="btn btn-lg btn-info mr-2">
                   Sign Up
                 </Link>
-                <a href="login.html" className="btn btn-lg btn-light">
+                <Link to="/login" className="btn btn-lg btn-light">
                   Login
-                </a>
+                </Link>
               </div>
             </div>
           </div>

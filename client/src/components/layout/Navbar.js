@@ -20,10 +20,10 @@ export default class Navbar extends Component {
           <div className="collapse navbar-collapse" id="mobile-nav">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
-                <a className="nav-link" href="profiles.html">
+                <Link className="nav-link" to="/profiles">
                   {" "}
                   Developers
-                </a>
+                </Link>
               </li>
             </ul>
 
@@ -34,9 +34,9 @@ export default class Navbar extends Component {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="login.html">
+                <Link className="nav-link" to="/login">
                   Login
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
