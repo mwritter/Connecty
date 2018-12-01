@@ -20,7 +20,16 @@ class Register extends Component {
     this.onInputChange = this.onInputChange.bind(this);
   }
 
+  componentDidMount() {
+    if (this.props.auth.isAuthenticated) {
+      this.props.history.push("/landing");
+    }
+  }
+
   componentWillReceiveProps(nextProps) {
+    if (nextProps.auth.isAuthenticated) {
+      this.props.history.push("/landing");
+    }
     if (nextProps.errors) {
       this.setState({ errors: nextProps.errors });
     }
