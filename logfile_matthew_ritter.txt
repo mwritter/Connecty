@@ -1,3 +1,75 @@
+commit 719609eedda5a476bf9269ff906fc96bfbd70d26
+Author: Matthew Ritter <mritter2283@gmail.com>
+Date:   Mon Nov 19 21:48:18 2018 -0500
+
+    Ready for deployment to Heroku
+
+commit f97f7a002b377f59353b85d35d6209bbd0f3e10b
+Author: Matthew Ritter <mritter2283@gmail.com>
+Date:   Mon Nov 19 21:36:21 2018 -0500
+
+    Updated gitignore
+
+commit 0a7fc7f82322f8d4b7b9ed6bab41cf23e107c096
+Author: Matthew Ritter <mritter2283@gmail.com>
+Date:   Mon Nov 19 21:26:12 2018 -0500
+
+    Added Login component and a route to push after register a user
+
+commit df7fcf7d3ddff499db951a11678531f43a189607
+Author: Matthew Ritter <mritter2283@gmail.com>
+Date:   Mon Nov 19 21:22:25 2018 -0500
+
+    Fixed Register.js to validate and register a new user
+
+commit fdb947eeb25df698996622960ec260f3f33b566d
+Author: Matthew Ritter <mritter2283@gmail.com>
+Date:   Mon Nov 19 20:21:15 2018 -0500
+
+    Added axios to handel post request
+
+commit 4a8bf380290b6203c7a5758fa53db5f3071eff5b
+Author: Matthew Ritter <mritter2283@gmail.com>
+Date:   Mon Nov 19 19:36:07 2018 -0500
+
+    Added Link tags to the navbar and Landing page
+
+commit 2267fe4de14683494b1ccee53e72ab0b12ba5658
+Author: Matthew Ritter <mritter2283@gmail.com>
+Date:   Mon Nov 19 19:28:12 2018 -0500
+
+    Added Register component and made a route to go to it
+
+commit 90b05266caeb57115903b86eb42f68352519a4c8
+Author: Matthew Ritter <mritter2283@gmail.com>
+Date:   Mon Nov 19 16:45:23 2018 -0500
+
+    Finished up Footer, and Landing and added them to App.js
+
+commit 223cbf91b4b8eca369191dd50faa494cca10a17a
+Author: Matthew Ritter <mritter2283@gmail.com>
+Date:   Mon Nov 19 16:38:30 2018 -0500
+
+    Added navbar, footer and landing component layout files, added Navbar to App.js
+
+commit f4136dd47a85254e60c253050f7eae14a787c216
+Author: Matthew Ritter <mritter2283@gmail.com>
+Date:   Mon Nov 19 16:32:41 2018 -0500
+
+    Added bootstrap, and fontawesome CDN
+
+commit 7aee3ef429ea9367f86213a16b94be0231128ca5
+Author: Matthew Ritter <mritter2283@gmail.com>
+Date:   Mon Nov 19 16:29:16 2018 -0500
+
+    Updated App.js and Added new styles
+
+commit 5a5b35636b4fdec46a50a830afff16f336435e1e
+Author: Matthew Ritter <mritter2283@gmail.com>
+Date:   Mon Nov 19 16:19:06 2018 -0500
+
+    Added test route back to my API, also created frontend client for web app
+
 commit 984aa5d64d9e4cf32568cc87c6946f697a1d07cb
 Author: Matthew Ritter <mritter2283@gmail.com>
 Date:   Thu Nov 8 07:49:00 2018 -0500
